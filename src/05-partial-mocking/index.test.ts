@@ -16,7 +16,7 @@ jest.mock('./index', () => {
 
 describe('partial mocking', () => {
   beforeEach(() => {
-    jest.spyOn(console, 'log').mockImplementation(() => {});
+    jest.spyOn(console, 'log').mockImplementation(() => undefined);
   });
 
   afterEach(() => {
